@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <p id="vai">Troque o background!</p>
+    <h1 id="foi"></h1>
+    
+    <script>
+        
+        var nome = window.prompt('Qual é o teu nome? ');
+      //  document.write(`Seja bem-vindo, ${nome}!`);
+            document.getElementById("vai").addEventListener("mouseout", function() {
+          //  document.getElementById("foi").innerText = `Seja bem-vindo, ${nome}!`;
+			document.body.style.background = 'red';
+			document.getElementById("vai").addEventListener("mouseover", function() {
+			document.body.style.background = 'green';
+        })});
+
+    
+    </script>
+    
+</body>
+</html>
